@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+class Student{
+private:
+    int rollNo;
+    int age;
+public:
+    string name;
+    string branch;
+
+    void setData(){
+        rollNo = 72;
+        age = 20;
+        name = "Tirth";
+        branch = "IT";
+    }
+    void displayData(){
+        cout << "Name: " << name << endl;
+        cout << "Roll No: " << rollNo << endl;
+        cout << "Age: " << age << endl;
+        cout << "Branch: " << branch << endl;
+    } };
+int main(){
+    Student s;
+    s.setData();
+    s.displayData();
+    return 0;
+}
